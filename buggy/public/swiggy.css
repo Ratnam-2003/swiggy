@@ -1,0 +1,165 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 200px;
+   background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.nav>ul{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    font-weight: 600;
+list-style-type: none;
+text-decoration: none;
+color: black;
+font-size: 18px;
+margin-left: 10px;
+}
+a:hover{
+ color: tomato;
+ cursor: pointer;
+}
+.home{
+    padding: 10px 200px;
+}
+.scroll{
+    display: flex;
+    padding: 8px;
+    overflow-x: scroll;
+}
+.scroll>div>img{
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+}
+.card{
+    width: 280px;
+    margin: 10px;
+}
+.card>img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 17px;
+}
+.card>text-box{
+    padding: 10px;
+
+}
+.card>.text-box>p{
+    margin: 1px;
+}
+.card>.text-box>h3{
+    margin: 1px;
+}
+.card-flex{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+.item-name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.body-card-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.button-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.button-flex>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.button-flex>div>button{
+   background-color: black;
+   color: white;
+   padding: 10px 30px;
+font-size: 20px;
+font-weight: bolder;
+cursor: pointer;
+}
+.button-flex>div>input{
+width: 350px;
+padding: 11px 30px;
+font-weight: bolder;
+}
+.f-btn{
+    margin-right: 30px;
+}
+.gray-box{
+    width: 300px;
+    height: 200px;
+    background-color: gray;
+    margin: 10px;
+
+}
+.resto-page{
+    width: 900px;
+    margin: 20px auto;
+
+}
+.resto-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.image-data>img{
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    background-color: rgb(255, 195, 195);
+    border: 2px solid black;
+
+}
+.image-data{
+    position: relative;
+}
+.btn-flex{
+   display: flex;
+   width: 150px;
+   font-size: 20px;
+   height: 40px;
+   border: 2px solid black;
+   justify-content: space-between;
+   align-items: center;
+   position: absolute;
+   bottom: 0;
+   margin-left: 50px;
+   margin-bottom: -21px;
+   background-color: white;
+
+}
+.btn-flex>button{
+    border: none;
+    font-size: 30px;
+}
