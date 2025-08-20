@@ -15,7 +15,7 @@ function Cart() {
       console.log(`paying total amount of ${totalMoney}`)
       
       const options = {
-        key: 'rzp_test_R7HiwY7wvcy3JE', // Replace with your Razorpay Test/Live Key ID
+        key: 'rzp_test_R7HiwY7wvcy3JEghhhiri', // Replace with your Razorpay Test/Live Key ID
         amount:totalMoney*100, // Amount in paise (₹5.00 = 500 paise)
         currency: 'INR',
         name: 'Biryani center',
