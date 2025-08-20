@@ -1,16 +1,23 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useEffect,useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { addItem } from '../redux/cartSlice'
 
 function RestoItem(props){
+ const dispatch=useDispatch()
+
   const [count,setCount]=useState(0)
+
+
   function handleAddItem(){
+    dispatch(addItem(props.data.card.info))
      setCount(count+1)
   }
   function handleRemoveItem(){
     setCount(count-1)
   }
-  console.log(props.data)
+ 
   return(
     <div className='resto-item'>
       <div className='data'>

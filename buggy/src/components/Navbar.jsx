@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 function Navbar() {
+  const cartLength=  useSelector((state)=>{
+    return state.cart.items.length
+  })
+  console.log(length)
   return (
     <div>
       <nav className='nav'>
@@ -14,7 +19,7 @@ function Navbar() {
         <Link><li> <i class="bi bi-gift"></i> Offers</li></Link>
        <Link> <li><i class="bi bi-patch-question"></i> Help</li></Link>
        <Link> <li><i class="bi bi-person-circle"></i> Chinni</li></Link>
-        <Link><li><i class="bi bi-cart-check"></i> Cart</li></Link>
+        <Link to='/cart'><li><i class="bi bi-cart-check"></i> Cart {cartLength}</li></Link>
       </ul>
       </nav>
     
